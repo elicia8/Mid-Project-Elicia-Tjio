@@ -11,11 +11,15 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
-<body>
+<body class="container-height">
     <x-navbar></x-navbar>
-
-    <div class="container mt-56px">
-        @yield('content')
+    <div class="container mt">
+        @yield('h1')
+        <div class="h-100 margin-content">
+            <div>
+                @yield('content')
+            </div>
+        </div>
     </div>
 </body>
 

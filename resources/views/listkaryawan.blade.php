@@ -2,10 +2,13 @@
 
 @section('title', 'Daftar Karyawan')
 
-@section('content')
+
+@section('h1')
     <h1 class="text-center">Daftar Karyawan PT ECOAS</h1>
-    <div class="text-center">
-        {{-- <a href="/listkaryawan" class="btn btn-primary text-center">Lihat Daftar Karyawan</a>
-        <a href="/create" class="btn btn-primary text-center">Tambah Karyawan</a> --}}
+@endsection
+@section('content')
+    <div>
+        <x-karyawans-table :karyawans="$karyawans"></x-karyawans-table>
+        {{-- <a href="/edit" class="btn btn-warning">Mode Edit</a> --}}
     </div>
 @endsection

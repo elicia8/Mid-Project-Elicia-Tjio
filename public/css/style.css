@@ -1,11 +1,23 @@
 * {
     font-family: 'ComicNeue-Regular';
 }
-.mt-56px{
-    margin-top: 56px;
+.mt{
+    margin-top: 5rem;
+}
+.margin-content{
+    margin-top: 1.5rem;
 }
 h1, a {
     font-family: 'ComicNeue-Bold';
+}
+.text-danger {
+    font-size: 14px;
+}
+.form-width {
+    width: 40%;
+}
+.container-height {
+    height: calc(100vh - 5rem);
 }
 @font-face {
     font-family: 'ComicNeue-Bold';
